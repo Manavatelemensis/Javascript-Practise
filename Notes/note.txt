@@ -9,3 +9,15 @@ Primitive Datatypes:-
 4.Bigint
 5.Undefined
 6.Null (But Null Is A Object)
+
+Non-Primitive Datatype:-
+
+1.Array
+2.Object
+3.Functions
+
+Datatype Conversion Confusion:-
+ NaN Error :- NaN error occur when a string + Number is converted into number (Not A Number)
+  example:- let a="10a"
+  let b=Number(a)
+  console.log(b)
