@@ -1,0 +1,11 @@
+
+
+Datatypes:-
+
+Primitive Datatypes:-
+1.Number
+2.String
+3.Boolean
+4.Bigint
+5.Undefined
+6.Null (But Null Is A Object)
