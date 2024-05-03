@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="ln">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+    function addlanguage(lang){
+        const li=document.createElement('li');
+        li.innerHTML=`${lang}`
+        document.querySelector('.ln').append(li)
+    
+    }
+
+    function optimseway(lang){
+        const li=document.createElement("li")
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector(".ln").appendChild(li)
+    }
+
+    addlanguage("java")
+    addlanguage("python")
+
+    
+
+    
+</script>
+</html>

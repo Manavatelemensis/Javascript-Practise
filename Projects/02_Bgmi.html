@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #CAL {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <H1> Body Mass Index Calculator </H1>
+    <form >
+    <div id="CAL">
+        <div>Enter Your Height <input type="text" id="h"></div>
+        <div>Enter Your Weight <input type="text" id="w"></div>
+        <div><Button >Calculate</Button>
+        </div>
+    </div>
+    </form>
+</body>
+
+<script>
+const form=document.querySelector('form')
+const body=document.querySelector('body')
+form.addEventListener('submit',function(e){
+    e.preventDefault(); 
+    const height =parseInt(document.querySelector('#h').value);
+    const weight=parseInt(document.querySelector('#w').value);
+    const bmi=weight/height;
+    const div=document.createElement('div')
+    const h1=document.createElement('h1')
+    const h2=document.createElement('h2')
+    const heading=document.createTextNode("BMI Weight Guide");
+    const descrip=document.createTextNode(`Your BMI = ${bmi}`)
+   h1.appendChild(heading);
+   h2.appendChild(descrip)
+   div.appendChild(h1).
+   appendChild(h2)
+
+    body.appendChild(div)
+   
+})
+
+</script>
+
+</html>
